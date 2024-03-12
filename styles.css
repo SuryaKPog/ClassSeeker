@@ -11,12 +11,21 @@ body {
 }
 
 .overlay-image {
-  position: absolute; /* Position the image absolutely */
-  top: 200px; /* Align to the top */
-  left: 810px; /* Align to the left */
-  width: 15%; /* Full width */
-  height: auto; /* Maintain aspect ratio */
-  z-index: 1; /* Ensure it's above other content */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0); /* Initially scale the image to 0 */
+  z-index: 1;
+  animation: zoomIn 2s forwards; /* Apply zoom-in animation */
+}
+
+@keyframes zoomIn {
+  from {
+    transform: translate(-50%, -50%) scale(0); /* Start from no scale */
+  }
+  to {
+    transform: translate(-50%, -50%) scale(0.15); /* End with full scale */
+  }
 }
 
 nav {
@@ -67,7 +76,19 @@ nav ul li a:hover {
   color: #e0e1dd;
   font-size: 108px; /* Larger font size for the title */
   text-align: center;
-  margin-top: 300px;
+  margin-top: 250px;
+  animation: fadeInTitle 2s forwards; /* Apply fade-in animation to the title */
+}
+
+@keyframes fadeInTitle {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* Start from slightly above */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
 }
 
 button {
@@ -80,6 +101,18 @@ button {
   margin-top: 0px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  animation: fadeInButton 2s forwards;
+}
+
+@keyframes fadeInButton {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 button:hover {
@@ -92,6 +125,28 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
+
+footer p {
+  margin: 0;
+}
+
+h2{
+  color: #e0e1dd;
+  margin-top:-100px;
+  animation: fadeInH2 2s forwards; /* Apply fade-in animation to the secondary heading */
+}
+
+@keyframes fadeInH2 {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* Start from slightly below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at original position */
+  }
+}
+
 
 footer p {
   margin: 0;
