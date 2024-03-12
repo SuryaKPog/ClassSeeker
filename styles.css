@@ -1,78 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;800&display=swap');
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
+  margin: 0;
+  font-family: Kanit, sans-serif;
+  position: relative; /* Ensure relative positioning for overlay container */
+}
 
-  nav {
-    background-color: #415a77; 
-    padding: 10px 20px; /* Add padding to give space around the logo */
-    display: flex; /* Make the navigation bar a flex container */
-    align-items: center; /* Center align items vertically */
-  }
+.overlay-container {
+  position: relative; /* Ensure relative positioning for overlay image */
+}
 
-  nav img {
-    height: 40px; /* Adjust the height of the logo */
-  }
+.overlay-image {
+  position: absolute; /* Position the image absolutely */
+  top: 200px; /* Align to the top */
+  left: 810px; /* Align to the left */
+  width: 15%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 1; /* Ensure it's above other content */
+}
 
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex; /* Make the list items flex items */
-  }
+nav {
+  background-color: #415a77;
+  padding: 10px 20px; /* Add padding to give space around the logo */
+  display: flex; /* Make the navigation bar a flex container */
+  align-items: center; /* Center align items vertically */
+  z-index: 2; /* Ensure it's above the overlay image */
+}
 
-  nav ul li {
-    margin-right: 20px;
-  }
+nav img {
+  height: 40px; /* Adjust the height of the logo */
+}
 
-  nav ul li a {
-    color: #fff; 
-    text-decoration: none;
-    font-size: 18px;
-  }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Make the list items flex items */
+  margin-left: auto; /* Move the list items to the right */
+}
 
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
+nav ul li {
+  margin-right: 50px;
+}
 
-  .hero {
-    background-color: #0d1b2a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 60px); /* Adjusting for the height of the navigation bar */
-  }
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
 
-  .title {
-    color: #e0e1dd;
-    font-size: 48px; /* Larger font size for the title */
-    text-align: center;
-  }
+nav ul li a:hover {
+  text-decoration: underline;
+}
 
-  button {
-    padding: 10px 20px;
-    background-color: #415a77;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+.hero {
+  background-color: #0d1b2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 60px); /* Adjusting for the height of the navigation bar */
+  z-index: 2; /* Ensure it's above the overlay image */
+}
 
-  button:hover {
-    background-color: #1b263b;
-  }
+.title {
+  color: #e0e1dd;
+  font-size: 108px; /* Larger font size for the title */
+  text-align: center;
+  margin-top: 300px;
+}
 
-  footer {
-    background-color: #415a77;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  footer p {
-    margin: 0;
-  }
+button {
+  padding: 10px 20px;
+  background-color: #415a77;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 0px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1b263b;
+}
+
+footer {
+  background-color: #415a77;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+h2{
+  color: #e0e1dd;
+  margin-top:-100px;
+}
