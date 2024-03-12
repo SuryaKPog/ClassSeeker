@@ -5,18 +5,23 @@ body {
 
   nav {
     background-color: #415a77; 
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 20px; /* Add padding to give space around the logo */
+    display: flex; /* Make the navigation bar a flex container */
+    align-items: center; /* Center align items vertically */
+  }
+
+  nav img {
+    height: 40px; /* Adjust the height of the logo */
   }
 
   nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex; /* Make the list items flex items */
   }
 
   nav ul li {
-    display: inline;
     margin-right: 20px;
   }
 
