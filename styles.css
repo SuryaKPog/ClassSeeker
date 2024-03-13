@@ -3,63 +3,64 @@
 body {
   margin: 0;
   font-family: Kanit, sans-serif;
-  position: relative; /* Ensure relative positioning for overlay container */
+  position: relative; 
 }
 
 .overlay-container {
-  position: relative; /* Ensure relative positioning for overlay image */
+  position: relative; 
 }
 
 .overlay-image {
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0); /* Initially scale the image to 0 */
+  transform: translate(-50%, -50%) scale(0); 
   z-index: 1;
-  animation: zoomIn 2s forwards; /* Apply zoom-in animation */
+  animation: zoomIn 2s forwards; 
 }
 
 @keyframes zoomIn {
   from {
-    transform: translate(-50%, -50%) scale(0); /* Start from no scale */
+    transform: translate(-50%, -50%) scale(0); 
   }
   to {
-    transform: translate(-50%, -50%) scale(0.15); /* End with full scale */
+    transform: translate(-50%, -50%) scale(0.15); 
   }
 }
 
 nav {
-  background-color: #415a77;
-  padding: 10px 20px; /* Add padding to give space around the logo */
-  display: flex; /* Make the navigation bar a flex container */
-  align-items: center; /* Center align items vertically */
-  z-index: 2; /* Ensure it's above the overlay image */
+    background-color: #415a77;
+    padding: 10px 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
 }
 
-  nav img {
-    height: 40px; /* Adjust the height of the logo */
-  }
+nav img {
+    height: 40px; 
+}
 
-  nav ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Make the list items flex items */
-  }
+    display: flex; 
+}
 
-  nav ul li {
+nav ul li {
     margin-right: 20px;
-  }
+}
 
-  nav ul li a {
-    color: #fff; 
+nav ul li a {
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
-  }
+}
 
-  nav ul li a:hover {
+nav ul li a:hover {
     text-decoration: underline;
-  }
+}
+
 
 .hero {
   background-color: #0d1b2a;
@@ -67,26 +68,26 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 60px); /* Adjusting for the height of the navigation bar */
-  z-index: 2; /* Ensure it's above the overlay image */
+  height: calc(100vh - 60px); 
+  z-index: 2; 
 }
 
 .title {
   color: #e0e1dd;
-  font-size: 108px; /* Larger font size for the title */
+  font-size: 108px; 
   text-align: center;
   margin-top: 250px;
-  animation: fadeInTitle 2s forwards; /* Apply fade-in animation to the title */
+  animation: fadeInTitle 2s forwards; 
 }
 
 @keyframes fadeInTitle {
   from {
     opacity: 0;
-    transform: translateY(-50px); /* Start from slightly above */
+    transform: translateY(-50px); 
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* End at original position */
+    transform: translateY(0); 
   }
 }
 
@@ -132,17 +133,17 @@ footer p {
 h2{
   color: #e0e1dd;
   margin-top:-100px;
-  animation: fadeInH2 2s forwards; /* Apply fade-in animation to the secondary heading */
+  animation: fadeInH2 2s forwards; 
 }
 
 @keyframes fadeInH2 {
   from {
     opacity: 0;
-    transform: translateY(50px); /* Start from slightly below */
+    transform: translateY(50px); 
   }
   to {
     opacity: 1;
-    transform: translateY(0); /* End at original position */
+    transform: translateY(0); 
   }
 }
 
