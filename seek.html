@@ -7,21 +7,39 @@
   <link rel="stylesheet" href="seek.css">
 </head>
 <body>
-    <nav>
-      <a href="#"><img src="class-seeker.png" alt="ClassSeeker Logo"></a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h1 class="hero-text">Hello, I am your seeker!</h2>
+  <nav>
+    <a href="#"><img src="class-seeker.png" alt="ClassSeeker Logo"></a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="hero">
+    <h1 class="hero-text">Hello, I am your seeker!</h1>
+    <div class="form-container">
+      <label for="dayOrder">Select Day Order:</label>
+      <select id="dayOrder">
+        <option value="1">Day Order 1</option>
+        <option value="2">Day Order 2</option>
+        <option value="3">Day Order 3</option>
+        <option value="4">Day Order 4</option>
+        <option value="5">Day Order 5</option>
+      </select>
+      <label for="lunchHour">Select Lunch Hour:</label>
+      <select id="lunchHour">
+        <option value="1">11:35 - 12:25</option>
+        <option value="2">12:30 - 1:20</option>
+      </select>
+      <button id="findButton">Seek</button>
     </div>
-    <footer>
-      <p>&copy; 2024 ClassSeeker. All rights reserved.</p>
-    </footer>
+    <div id="results" class="results"></div>
   </div>
+  <footer>
+    <p>&copy; 2024 ClassSeeker. All rights reserved.</p>
+  </footer>
+  
+  <script src="seek.js"></script>
 </body>
 </html>

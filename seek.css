@@ -7,62 +7,101 @@ body {
 }
 
 nav {
-    background-color: #415a77;
-    padding: 10px 20px; /* Add padding to give space around the logo */
-    display: flex; /* Make the navigation bar a flex container */
-    align-items: center; /* Center align items vertically */
-    z-index: 2; /* Ensure it's above the overlay image */
-  }
-  
-  nav img {
-    height: 40px; /* Adjust the height of the logo */
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex; /* Make the list items flex items */
-    margin-left: auto; /* Move the list items to the right */
-  }
-  
-  nav ul li {
-    margin-right: 50px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-
-  .hero {
-    background-color: #0d1b2a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 60px); /* Adjusting for the height of the navigation bar */
-    z-index: 2; /* Ensure it's above the overlay image */
-  }
-  
-h1{
-    color: #e0e1dd;
-    text-align:center ;
+  background-color: #415a77;
+  padding: 10px 20px; /* Add padding to give space around the logo */
+  display: flex; /* Make the navigation bar a flex container */
+  align-items: center; /* Center align items vertically */
+  z-index: 2; /* Ensure it's above the overlay image */
 }
 
+nav img {
+  height: 40px; /* Adjust the height of the logo */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Make the list items flex items */
+  margin-left: auto; /* Move the list items to the right */
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px; /* Increase font size */
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: #0d1b2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 60px); /* Adjusting for the height of the navigation bar */
+  z-index: 2; /* Ensure it's above the overlay image */
+  color: #fff; /* Text color */
+  padding: 20px; /* Add padding */
+}
+
+.hero-text {
+  font-size: 24px; /* Increase font size */
+  margin-bottom: 20px; /* Add space below text */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 18px; /* Increase font size for labels */
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 10px;
+  font-size: 18px; /* Increase font size for select dropdown */
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #415a77;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px; /* Increase font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Increased top margin */
+}
+
+button:hover {
+  background-color: #1b263b;
+}
+
+.results {
+  margin-top: 20px;
+  font-size: 18px; /* Increase font size for results */
+}
 
 footer {
-    background-color: #415a77;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  footer p {
-    margin: 0;
-  }
+  background-color: #415a77;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
