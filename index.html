@@ -21,7 +21,14 @@
     <div class="hero">
       <h1 class="title">ClassSeeker</h1>
       <h2 class="hero-text">Click on seek to know more!</h2>
-      <button>Seek</button>
+      <button id="seekButton">Seek</button>
+
+<script>
+document.getElementById("seekButton").addEventListener("click", function() {
+    // This function will be executed when the button is clicked
+    window.location.href = "seek.html"; // Redirect to seek.html
+});
+</script>
     </div>
     <footer>
       <p>&copy; 2024 ClassSeeker. All rights reserved.</p>
