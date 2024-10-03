@@ -45,26 +45,6 @@
     <p>&copy; 2024 ClassSeeker. All rights reserved.</p>
   </footer>
 
-  <script>
-    document.getElementById("seekButton").addEventListener("click", function() {
-      const classroom = document.getElementById("classroom").value;
-      const dayOrder = document.getElementById("dayOrder").value;
-
-      // Assuming you have a data structure as mentioned above (classrooms object)
-      const freeSlots = classrooms[classroom] && classrooms[classroom][dayOrder];
-
-      const resultsContainer = document.getElementById("results");
-      if (freeSlots && freeSlots.length > 0) {
-        resultsContainer.innerHTML = `
-          <h3>Free Slots for ${classroom} on Day Order ${dayOrder}:</h3>
-          <ul>
-            ${freeSlots.map(slot => `<li>${slot}</li>`).join('')}
-          </ul>
-        `;
-      } else {
-        resultsContainer.innerHTML = `<p>No available slots for ${classroom} on Day Order ${dayOrder}.</p>`;
-      }
-    });
-  </script>
+  <script src="seek.js"></script> <!-- Add this line to include your JavaScript file -->
 </body>
 </html>
